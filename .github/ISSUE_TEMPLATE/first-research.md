@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-关联技术: [item1] [item2] [item3]
+关联技术: [item]
 
 研究之后要能够回答以下问题：
 
