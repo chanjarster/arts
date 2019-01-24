@@ -1,7 +1,7 @@
 ---
 name: 等待解答
 about: 等待解答
-title: "[item] - [XXX] 问题的疑问"
+title: 关于[item] - [XXX] 问题的疑问
 labels: question
 assignees: ''
 
