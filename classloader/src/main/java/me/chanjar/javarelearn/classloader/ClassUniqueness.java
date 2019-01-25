@@ -18,10 +18,9 @@ import java.net.URLClassLoader;
  * 3. java -cp target/classloader.jar me.chanjar.javarelearn.classloader.ReferencedClassClassLoader
  * </p>
  */
-public class ReferencedClassClassLoader {
+public class ClassUniqueness {
 
-  public static void main(String[] args)
-      throws MalformedURLException, ClassNotFoundException, IllegalAccessException, InstantiationException {
+  public static void main(String[] args) throws Exception {
 
     System.out.println("1st Foo class: loaded by application class loader");
     Class<?> fooClass1 = Class.forName("me.chanjar.javarelearn.classloader.Foo");
