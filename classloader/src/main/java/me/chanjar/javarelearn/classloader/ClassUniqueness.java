@@ -1,6 +1,5 @@
 package me.chanjar.javarelearn.classloader;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 
@@ -21,22 +20,15 @@ import java.net.URLClassLoader;
 public class ClassUniqueness {
 
   public static void main(String[] args) throws Exception {
+    Class<?> fooClass1 = Class.forName("me.chanjar.javarelearn.classloader.ClassUniqueness");
+    System.out.println("1st ClassUniqueness's ClassLoader: " + fooClass1.getClassLoader());
 
-    System.out.println("1st Foo class: loaded by application class loader");
-    Class<?> fooClass1 = Class.forName("me.chanjar.javarelearn.classloader.Foo");
-    fooClass1.newInstance();
-
-    System.out.println();
-
-    System.out.println("2st Foo class: loaded by URLClassLoader");
     // 故意将parent class loader设置为null，否则就是SystemClassLoader（即ApplicationClassLoader）
     URLClassLoader ucl = new URLClassLoader(new URL[] { new URL("file:///tmp/classloader.jar") }, null);
-    Class<?> fooClass2 = ucl.loadClass("me.chanjar.javarelearn.classloader.Foo");
-    fooClass2.newInstance();
+    Class<?> fooClass2 = ucl.loadClass("me.chanjar.javarelearn.classloader.ClassUniqueness");
+    System.out.println("2nd ClassUniqueness's ClassLoader: " + fooClass2.getClassLoader());
 
-    System.out.println();
-
-    System.out.println("1st Foo class == 2nd Foo class? : " + fooClass1.equals(fooClass2));
+    System.out.println("Two ClassUniqueness class equals? " + fooClass1.equals(fooClass2));
   }
 
 }
