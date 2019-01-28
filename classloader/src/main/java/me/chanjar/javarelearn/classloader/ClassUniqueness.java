@@ -14,7 +14,7 @@ import java.net.URLClassLoader;
  * </p>
  * 2. copy classloader.jar 到 /tmp 目录下
  * <p>
- * 3. java -cp target/classloader.jar me.chanjar.javarelearn.classloader.ReferencedClassClassLoader
+ * 3. java -cp target/classloader.jar me.chanjar.javarelearn.classloader.ClassUniqueness
  * </p>
  */
 public class ClassUniqueness {
