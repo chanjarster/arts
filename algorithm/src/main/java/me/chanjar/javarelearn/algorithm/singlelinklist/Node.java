@@ -25,7 +25,7 @@ public class Node {
   protected Node() {
   }
 
-  protected Node(String value, Node next) {
+  public Node(String value, Node next) {
     this.value = value;
     this.next = next;
   }
