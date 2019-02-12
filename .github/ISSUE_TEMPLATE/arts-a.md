@@ -1,7 +1,7 @@
 ---
 name: ARTS-A
-about: 算法
-title: 算法 [name]
+about: 算法题
+title: 算法题 [name]
 labels: ARTS-A
 assignees: ''
 

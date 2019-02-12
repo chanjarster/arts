@@ -1,5 +1,5 @@
 ---
-name: 实践总结
+name: Practice
 about: 实践总结
 title: 关于[item] - 使用过程中遇到的 XXXX 问题及解决办法
 labels: practice

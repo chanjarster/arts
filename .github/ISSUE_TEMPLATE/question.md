@@ -1,5 +1,5 @@
 ---
-name: 等待解答
+name: Question
 about: 等待解答
 title: 关于[subject] - [xxx] 问题的疑问
 labels: question

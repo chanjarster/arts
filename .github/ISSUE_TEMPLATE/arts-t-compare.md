@@ -1,7 +1,7 @@
 ---
 name: ARTS-T 对比研究
 about: 技术对比Tip
-title: 对比研究 [name1] [name2] ...
+title: 技术对比Tip [name1] [name2] ...
 labels: ARTS-T
 assignees: ''
 
