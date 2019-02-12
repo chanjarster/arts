@@ -1,19 +1,20 @@
 ---
-name: 初步研究
-about: 初步研究
-title: 初步研究 [item]
-labels: research
+name: ARTS-T 对比研究
+about: 技术对比Tip
+title: 对比研究 [name1] [name2] ...
+labels: ARTS-T
 assignees: ''
 
 ---
 
-关联技术: [item]
+关联技术: [name1] [name2] ...
+
+参考资料: ...
 
 研究之后要能够回答以下问题：
 
-1. 这项技术是什么？
-1. 这项技术解决了什么问题？
-1. 这项技术的工作原理是什么？
+1. 各技术适用场景是什么？
+1. 各技术的优缺点是什么？
 
 研究成果提交形式：
 

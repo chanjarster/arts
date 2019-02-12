@@ -1,7 +1,7 @@
 ---
 name: 等待解答
 about: 等待解答
-title: 关于[item] - [XXX] 问题的疑问
+title: 关于[subject] - [xxx] 问题的疑问
 labels: question
 assignees: ''
 
@@ -9,7 +9,7 @@ assignees: ''
 
 关联技术: [item]
 
-问题描述: [XXXX]
+问题描述: [xxx]
 
 研究成果提交形式：
 

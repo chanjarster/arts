@@ -1,18 +1,21 @@
 ---
-name: 对比研究
-about: 对比研究
-title: 对比研究 [item1] [item2] [item3]
-labels: research
+name: ARTS-T
+about: 技术Tip
+title: 技术Tip [name]
+labels: ARTS-T
 assignees: ''
 
 ---
 
-关联技术: [item1] [item2] [item3]
+技术: [name]
+
+参考资料: ...
 
 研究之后要能够回答以下问题：
 
-1. 各技术适用场景是什么？
-1. 各技术的优缺点是什么？
+1. 这项技术是什么？
+1. 这项技术解决了什么问题？
+1. 这项技术的工作原理是什么？
 
 研究成果提交形式：
 
