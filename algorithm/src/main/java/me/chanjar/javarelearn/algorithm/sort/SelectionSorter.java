@@ -6,10 +6,10 @@ package me.chanjar.javarelearn.algorithm.sort;
  */
 public class SelectionSorter implements Sorter {
 
-  public int[] sort(int[] a) {
+  public void sort(int[] a) {
     int n = a.length;
     if (n <= 1) {
-      return a;
+      return;
     }
 
     for (int i = 0; i < n; i++) {
@@ -33,7 +33,5 @@ public class SelectionSorter implements Sorter {
       a[min_i] = tmp;
 
     }
-
-    return a;
   }
 }

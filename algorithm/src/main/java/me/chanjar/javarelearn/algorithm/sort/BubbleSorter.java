@@ -6,11 +6,11 @@ package me.chanjar.javarelearn.algorithm.sort;
  */
 public class BubbleSorter implements Sorter {
 
-  public int[] sort(int[] a) {
+  public void sort(int[] a) {
 
     int n = a.length;
     if (n <= 1) {
-      return a;
+      return;
     }
 
     for (int i = 0; i < n; i++) {
@@ -33,6 +33,5 @@ public class BubbleSorter implements Sorter {
         break;
       }
     }
-    return a;
   }
 }
