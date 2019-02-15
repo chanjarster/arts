@@ -18,6 +18,8 @@ public abstract class SorterTestBase {
   @Test
   public void testSort() {
 
+    assertArrayEquals(new int[] { 1, 1, 1, 1 }, sortWrapper(new int[] { 1, 1, 1, 1 }));
+
     assertArrayEquals(new int[] { 1, 2, 3, 4 }, sortWrapper(new int[] { 1, 2, 3, 4 }));
     assertArrayEquals(new int[] { 1, 2, 3, 4 }, sortWrapper(new int[] { 1, 2, 4, 3 }));
     assertArrayEquals(new int[] { 1, 2, 3, 4 }, sortWrapper(new int[] { 1, 3, 2, 4 }));
@@ -47,7 +49,7 @@ public abstract class SorterTestBase {
     assertArrayEquals(new int[] { 1, 2, 3, 4 }, sortWrapper(new int[] { 4, 3, 2, 1 }));
 
     assertArrayEquals(new int[] { 1, 2, 3, 4, 5 }, sortWrapper(new int[] { 5, 4, 3, 2, 1 }));
-
+    assertArrayEquals(new int[] { 1, 1, 1, 1, 1 }, sortWrapper(new int[] { 1, 1, 1, 1, 1 }));
   }
 
   @Test
