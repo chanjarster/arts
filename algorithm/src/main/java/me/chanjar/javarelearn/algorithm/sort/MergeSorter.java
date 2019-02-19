@@ -2,28 +2,9 @@ package me.chanjar.javarelearn.algorithm.sort;
 
 /**
  * <a href="https://time.geekbang.org/column/article/41913">极客时间 - 数据结构与算法之美 - 12 | 排序（下）：如何用快排思想在O(n)内查找第K大元素？</a>
- * <p>归并排序</p>
- * 算法说明：
- * <p>a 代表数组</p>
- * mergeSort算法是递归算法：
- * <ol>
- * <li>把 a 一分为二</li>
- * <li>对 a 左半部分排序</li>
- * <li>对 a 右半部分排序</li>
- * <li>把两部分合并，合并结果得是有序的</li>
- * </ol>
- * 其中对 a 左、右部分排序也是使用mergeSort算法
- *
  * <p>
- * 上述文字用代码表现就是：
+ * 笔记：<a href="https://chanjarster.github.io/post/algo/11-merge-sort/">归并排序</a>
  * </p>
- * <pre>
- * <code>mergeSort(a) {
- *   mergeSort(a_left_part)
- *   mergeSort(a_right_part)
- *   merge(a_left_part, a_right_part)
- * }</code>
- * </pre>
  */
 public class MergeSorter implements Sorter {
 
