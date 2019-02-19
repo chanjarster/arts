@@ -40,8 +40,7 @@ public class QuickSorter implements Sorter {
     }
 
     // 把 pivot 和 pivot_i 元素位置互换
-    int tmp = a[pivot_i];
-    a[end] = tmp;
+    a[end] = a[pivot_i];
     a[pivot_i] = pivot;
 
     // 对 pivot_i 左边的元素进行排序
