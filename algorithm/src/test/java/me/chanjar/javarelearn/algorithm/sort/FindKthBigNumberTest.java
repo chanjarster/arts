@@ -24,6 +24,8 @@ public class FindKthBigNumberTest {
     assertEquals(1, FindKthBigNumber.findKthBigNumber(new int[] { 1, 1, 1, 1 }, 3));
     assertEquals(1, FindKthBigNumber.findKthBigNumber(new int[] { 1, 1, 1, 1 }, 4));
 
+    assertEquals(-1, FindKthBigNumber.findKthBigNumber(new int[] { 1, 1, 1, 1 }, 5));
+
   }
 
 }

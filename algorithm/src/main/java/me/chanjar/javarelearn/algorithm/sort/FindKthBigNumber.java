@@ -11,12 +11,19 @@ public class FindKthBigNumber {
   public static int findKthBigNumber(int[] a, int kthBig) {
 
     int n = a.length;
+    if (kthBig > n) {
+      return -1;
+    }
     int lthSmall = n - kthBig;
+
     return quickFind(a, 0, a.length - 1, lthSmall);
   }
 
   private static int quickFind(int[] a, int start, int end, int lthSmall) {
 
+    if (start > end) {
+      return -1;
+    }
     int pivot = a[end];
 
     int pivot_i = start;
