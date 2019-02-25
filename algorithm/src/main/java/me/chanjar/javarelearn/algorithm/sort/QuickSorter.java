@@ -17,7 +17,23 @@ public class QuickSorter implements Sorter {
     if (start >= end) {
       return;
     }
+    int pivot_i = partition(a, start, end);
 
+    // 对 pivot_i 左边的元素进行排序
+    quickSort(a, start, pivot_i - 1);
+    // 对 pivot_i 右边的元素进行排序
+    quickSort(a, pivot_i + 1, end);
+  }
+
+  /**
+   * 分区
+   *
+   * @param a
+   * @param start
+   * @param end
+   * @return 返回分区点
+   */
+  private int partition(int[] a, int start, int end) {
     // 取数组最后一个元素作为pivot
     int pivot = a[end];
     // 要计算的pivot的下标
@@ -38,15 +54,10 @@ public class QuickSorter implements Sorter {
         pivot_i++;
       }
     }
-
     // 把 pivot 和 pivot_i 元素位置互换
     a[end] = a[pivot_i];
     a[pivot_i] = pivot;
-
-    // 对 pivot_i 左边的元素进行排序
-    quickSort(a, start, pivot_i - 1);
-    // 对 pivot_i 右边的元素进行排序
-    quickSort(a, pivot_i + 1, end);
+    return pivot_i;
   }
 
 }

@@ -25,20 +25,7 @@ public class FindKthBigNumber {
     if (start > end) {
       return -1;
     }
-    int pivot = a[end];
-
-    int pivot_i = start;
-    for (int j = start; j <= end - 1; j++) {
-      if (a[j] < pivot) {
-        int tmp = a[j];
-        a[j] = a[pivot_i];
-        a[pivot_i] = tmp;
-        pivot_i++;
-      }
-    }
-
-    a[end] = a[pivot_i];
-    a[pivot_i] = pivot;
+    int pivot_i = partition(a, start, end);
 
     if (pivot_i == lthSmall) {
       return a[pivot_i];
@@ -50,5 +37,33 @@ public class FindKthBigNumber {
 
     return quickFind(a, start, pivot_i - 1, lthSmall);
 
+  }
+
+  /**
+   * 快排的分区算法
+   *
+   * @param a
+   * @param start
+   * @param end
+   * @return 分区点
+   */
+  private static int partition(int[] a, int start, int end) {
+    int pivot = a[end];
+
+    int pivot_i = start;
+    for (int j = start; j <= end - 1; j++) {
+      if (a[j] < pivot) {
+        if (pivot_i != j) {
+          int tmp = a[j];
+          a[j] = a[pivot_i];
+          a[pivot_i] = tmp;
+        }
+        pivot_i++;
+      }
+    }
+
+    a[end] = a[pivot_i];
+    a[pivot_i] = pivot;
+    return pivot_i;
   }
 }
