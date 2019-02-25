@@ -5,6 +5,7 @@ package me.chanjar.javarelearn.algorithm.sort;
  * <p>
  * 题目来源：<a href="https://time.geekbang.org/column/article/41913">极客时间 - 数据结构与算法之美 - 12 | 排序（下）：如何用快排思想在O(n)内查找第K大元素？</a>
  * </p>
+ * 笔记：<a href="https://chanjarster.github.io/post/algo/13-find-kth-big-number/"></a>
  */
 public class FindKthBigNumber {
 
