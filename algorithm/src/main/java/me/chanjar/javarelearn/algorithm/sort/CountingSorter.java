@@ -6,16 +6,17 @@ package me.chanjar.javarelearn.algorithm.sort;
  * 笔记：TODO
  * </p>
  */
-
-/**
- *
- */
 public class CountingSorter implements Sorter {
 
   public void sort(int[] a) {
     if (a.length <= 1) {
       return;
     }
+    int min = findMin(a);
+    if (min < 0) {
+      throw new IllegalArgumentException("element must greater than or equal to zero");
+    }
+
     int max = findMax(a);
     int[] counting = new int[max];
     for (int i = 0; i < a.length; i++) {
@@ -37,6 +38,15 @@ public class CountingSorter implements Sorter {
     }
   }
 
+  private int findMin(int[] a) {
+    int min = a[0];
+    for (int i = 1; i < a.length; i++) {
+      if (a[i] < min) {
+        min = a[i];
+      }
+    }
+    return min;
+  }
   private int findMax(int[] a) {
     int max = a[0];
 
